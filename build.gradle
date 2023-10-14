@@ -14,8 +14,14 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation group: 'org.apache.commons', name: 'commons-rng-simple', version: '1.5'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.13.0'
     implementation 'javax.inject:javax.inject:1'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-logging'
 }
 
 test {
